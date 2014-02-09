@@ -1,0 +1,81 @@
+(Store){
+   id = 28267
+   name = "London - Holloway Road DEV"
+   address1 = "598-602 Holloway Road"
+   address2 = None
+   address3 = "London"
+   postcode = "N19 3PH"
+   phone = "0207 272 8338 "
+   lat = "51.561314"
+   lng = "-0.123973"
+   countryCode = "GBR"
+   currencyCode = "GBP"
+   minimumOrderValue = 9.99
+   maximumOrderValue = 250.0
+   maximumOrderValueCash = 100.0
+   maximumOrderValuePayPal = 50.0
+   isOpen = False
+   canOrder = False
+   canDeliver = True
+   canCollect = True
+   storeClosedMessage = "Store is taking online orders"
+   tradingDays =
+      (ArrayOfTradingDay){
+         TradingDay[] =
+            (TradingDay){
+               day = "Monday"
+               open = "11:00"
+               close = "23:45"
+               allDayOpen = False
+               allDayClosed = False
+            },
+            (TradingDay){
+               day = "Tuesday"
+               open = "11:00"
+               close = "23:45"
+               allDayOpen = False
+               allDayClosed = False
+            },
+            (TradingDay){
+               day = "Wednesday"
+               open = "11:00"
+               close = "23:45"
+               allDayOpen = False
+               allDayClosed = False
+            },
+            (TradingDay){
+               day = "Thursday"
+               open = "11:00"
+               close = "23:45"
+               allDayOpen = False
+               allDayClosed = False
+            },
+            (TradingDay){
+               day = "Friday"
+               open = "11:00"
+               close = "00:45"
+               allDayOpen = False
+               allDayClosed = False
+            },
+            (TradingDay){
+               day = "Saturday"
+               open = "11:00"
+               close = "00:45"
+               allDayOpen = False
+               allDayClosed = False
+            },
+            (TradingDay){
+               day = "Sunday"
+               open = "11:00"
+               close = "23:45"
+               allDayOpen = False
+               allDayClosed = False
+            },
+      }
+   cashEndTime = None
+   minutesUntilClose = -109
+   LastCampPublishMenuUpdate = 2014-02-03 10:21:00
+   cashForCollectionActive = True
+   isCashCurrentlyAvailable = True
+ }
+
