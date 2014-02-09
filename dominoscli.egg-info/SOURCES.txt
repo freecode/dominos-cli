@@ -1,0 +1,8 @@
+setup.py
+bin/dominos.py
+dominoscli/__init__.py
+dominoscli/client.py
+dominoscli.egg-info/PKG-INFO
+dominoscli.egg-info/SOURCES.txt
+dominoscli.egg-info/dependency_links.txt
+dominoscli.egg-info/top_level.txt

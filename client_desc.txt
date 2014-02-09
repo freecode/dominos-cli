@@ -1,0 +1,427 @@
+
+Suds ( https://fedorahosted.org/suds/ )  version: 0.4 GA  build: R699-20100913
+
+Service ( PizzaService ) tns="http://www.dominos.co.uk/webservices/"
+   Prefixes (1)
+      ns0 = "http://www.dominos.co.uk/webservices/"
+   Ports (2):
+      (PizzaServiceSoap)
+         Methods (53):
+            CardPaymentsActive(xs:string key, )
+            DirectMarketing()
+            EditUser(xs:string key, xs:string sessionId, xs:string userXml, )
+            ForgottenPasswordValidation(xs:string email, xs:string additionalInfo, )
+            GetAddressListByPostcode(xs:string key, xs:string postcode, xs:int origin, xs:int platform, )
+            GetAddressesByBuildingAndStreet(xs:string key, xs:string building, xs:string street, )
+            GetAddressesByPostcode(xs:string key, xs:string postcode, xs:int origin, xs:int platform, )
+            GetConfig(xs:string key, )
+            GetConfigForPlatform(xs:string key, xs:int platform, )
+            GetCustomisation(xs:string key, xs:int storeId, xs:int productId, )
+            GetCustomisationWithToppingPrice(xs:string key, xs:int storeId, xs:int productId, )
+            GetDeliveryTimes(xs:string key, xs:int storeId, xs:string postcode, xs:int addressLookupId, xs:string basketXml, )
+            GetGermanStreetsByPostcode(xs:string key, xs:string postcode, )
+            GetMenu(xs:string key, xs:int storeId, )
+            GetMenuWithTimeRestrictions(xs:string key, xs:int storeId, )
+            GetMerchantReference(xs:string key, )
+            GetMerchantReferenceAndSaveOrder(xs:string key, xs:string orderXml, )
+            GetNewVoucher(xs:string key, xs:int storeId, xs:decimal basketValue, )
+            GetNewVoucherWithOrderId(xs:string key, xs:int storeId, xs:decimal basketValue, xs:int orderId, )
+            GetOrderStatus(xs:string key, xs:int orderId, )
+            GetPreviousOrder(xs:string key, xs:string sessionId, )
+            GetPrice(xs:string key, xs:int storeId, xs:string basketItem, )
+            GetRegions(xs:string key, )
+            GetStoreByAddress(xs:string key, xs:int addressId, )
+            GetStoreByGermanStreetId(xs:string key, xs:int id, )
+            GetStoreById(xs:string key, xs:int storeId, )
+            GetStoreByPostcode(xs:string key, xs:string postcode, xs:int origin, xs:int platform, )
+            GetStoreDeliveryTimes(xs:string key, xs:int storeId, xs:string postcode, xs:string country, xs:int addressLookupId, xs:string basketXml, )
+            GetStoresByGPS(xs:string key, xs:double latitude, xs:double longitude, )
+            GetStoresByRegion(xs:string key, xs:int regionId, )
+            InsertOrderPushToken(xs:string key, xs:string orderId, xs:string pushToken, )
+            Login(xs:string key, xs:string email, xs:string password, )
+            Online()
+            OptOut(xs:string mobileNumber, xs:string emailAddress, )
+            PayOrder(xs:string key, xs:int orderId, xs:string paymentDetailsXml, )
+            PlaceCustomersSavedOrder(xs:string key, xs:string userName, xs:string password, )
+            PlaceOrder(xs:string key, xs:string orderXml, )
+            PlaceSavedOrder(xs:string key, xs:int orderId, xs:string paymentGatewayReference, xs:string bankAuthCode, xs:string merchantReference, xs:string locale, xs:decimal amount, xs:int origin, xs:int platform, xs:string panMasked, )
+            PriceBasket(xs:string key, xs:int storeId, xs:string basket, )
+            PriceBasketWeb(xs:string key, xs:int storeId, xs:string basket, )
+            PriceBasketWithAddressDE(xs:string key, xs:int storeId, xs:string country, xs:string address, xs:string basket, )
+            PriceBasketWithAddressDEWeb(xs:string key, xs:int storeId, xs:string address, xs:string basket, )
+            PriceBasketWithAddressRoI(xs:string key, xs:int storeId, xs:int addressId, xs:string basket, )
+            PriceBasketWithAddressRoIWeb(xs:string key, xs:int storeId, xs:int addressId, xs:string basket, )
+            PriceBasketWithAddressUK(xs:string key, xs:int storeId, xs:string ukAddress, xs:string basket, )
+            PriceBasketWithAddressUKWeb(xs:string key, xs:int storeId, xs:string ukAddress, xs:string basket, )
+            PriceBasketWithVoucherRequestWeb(xs:string key, xs:int storeId, xs:string basket, xs:string referrer, )
+            PrivacyPolicy()
+            Register(xs:string key, xs:string userXml, )
+            SendPassword(xs:string email, xs:string securityAnswer, )
+            SetCustomerPushServiceToken(xs:string key, xs:int customerId, xs:string pushToken, xs:int platformId, )
+            TermsAndConditions()
+            ValidVersion(xs:int platform, xs:string version, )
+         Types (153):
+            AdditionalProduct
+            AddressDE
+            AddressROI
+            AddressUK
+            ApiIdAddressUK
+            ArrayOfAdditionalProduct
+            ArrayOfAddressROI
+            ArrayOfAddressUK
+            ArrayOfApiIdAddressUK
+            ArrayOfBase
+            ArrayOfBasePrice
+            ArrayOfBasketItem
+            ArrayOfBasketItemResult
+            ArrayOfDeliveryTime
+            ArrayOfFreebieSku
+            ArrayOfInt
+            ArrayOfInt1
+            ArrayOfInt2
+            ArrayOfInt3
+            ArrayOfInt4
+            ArrayOfMealDeal
+            ArrayOfMealDealItem
+            ArrayOfProduct
+            ArrayOfProductSku
+            ArrayOfProductSkuCustomisation
+            ArrayOfRegion
+            ArrayOfStore
+            ArrayOfStreetIdPair
+            ArrayOfTopping
+            ArrayOfToppingChange
+            ArrayOfTradingDay
+            Base
+            BasePrice
+            Basket
+            BasketItem
+            BasketItemResult
+            BasketResult
+            CustomerPushResult
+            Customisation
+            DeliveryTime
+            xs:ENTITIES
+            xs:ENTITY
+            ForgottenPasswordResult
+            Freebie
+            FreebieSku
+            xs:ID
+            xs:IDREF
+            xs:IDREFS
+            LoginResult
+            MealDeal
+            MealDealItem
+            Menu
+            xs:NCName
+            xs:NMTOKEN
+            xs:NMTOKENS
+            xs:NOTATION
+            xs:Name
+            OrderResult
+            OrderStatus
+            PreviousOrderResult
+            Product
+            ProductSku
+            ProductSkuCustomisation
+            xs:QName
+            Region
+            RegisterResult
+            Store
+            StreetIdPair
+            Topping
+            ToppingChange
+            TradingDay
+            User
+            Voucher
+            VoucherResult
+            xs:all
+            xs:allNNI
+            xs:annotated
+            xs:anyType
+            xs:anyURI
+            xs:attribute
+            xs:attributeGroup
+            xs:attributeGroupRef
+            xs:base64Binary
+            xs:blockSet
+            xs:boolean
+            xs:byte
+            xs:complexRestrictionType
+            xs:complexType
+            xs:date
+            xs:dateTime
+            xs:decimal
+            xs:derivationControl
+            xs:derivationSet
+            xs:double
+            xs:duration
+            xs:element
+            xs:explicitGroup
+            xs:extensionType
+            xs:facet
+            xs:float
+            xs:formChoice
+            xs:fullDerivationSet
+            xs:gDay
+            xs:gMonth
+            xs:gMonthDay
+            xs:gYear
+            xs:gYearMonth
+            xs:group
+            xs:groupRef
+            xs:hexBinary
+            xs:int
+            xs:integer
+            xs:keybase
+            xs:language
+            xs:localComplexType
+            xs:localElement
+            xs:localSimpleType
+            xs:long
+            xs:namedAttributeGroup
+            xs:namedGroup
+            xs:namespaceList
+            xs:narrowMaxMin
+            xs:negativeInteger
+            xs:noFixedFacet
+            xs:nonNegativeInteger
+            xs:nonPositiveInteger
+            xs:normalizedString
+            xs:numFacet
+            xs:openAttrs
+            xs:positiveInteger
+            xs:public
+            xs:realGroup
+            xs:reducedDerivationControl
+            xs:restrictionType
+            xs:short
+            xs:simpleDerivationSet
+            xs:simpleExplicitGroup
+            xs:simpleExtensionType
+            xs:simpleRestrictionType
+            xs:simpleType
+            xs:string
+            xs:time
+            xs:token
+            xs:topLevelAttribute
+            xs:topLevelComplexType
+            xs:topLevelElement
+            xs:topLevelSimpleType
+            xs:typeDerivationControl
+            xs:unsignedByte
+            xs:unsignedInt
+            xs:unsignedLong
+            xs:unsignedShort
+            xs:wildcard
+      (PizzaServiceSoap12)
+         Methods (53):
+            CardPaymentsActive(xs:string key, )
+            DirectMarketing()
+            EditUser(xs:string key, xs:string sessionId, xs:string userXml, )
+            ForgottenPasswordValidation(xs:string email, xs:string additionalInfo, )
+            GetAddressListByPostcode(xs:string key, xs:string postcode, xs:int origin, xs:int platform, )
+            GetAddressesByBuildingAndStreet(xs:string key, xs:string building, xs:string street, )
+            GetAddressesByPostcode(xs:string key, xs:string postcode, xs:int origin, xs:int platform, )
+            GetConfig(xs:string key, )
+            GetConfigForPlatform(xs:string key, xs:int platform, )
+            GetCustomisation(xs:string key, xs:int storeId, xs:int productId, )
+            GetCustomisationWithToppingPrice(xs:string key, xs:int storeId, xs:int productId, )
+            GetDeliveryTimes(xs:string key, xs:int storeId, xs:string postcode, xs:int addressLookupId, xs:string basketXml, )
+            GetGermanStreetsByPostcode(xs:string key, xs:string postcode, )
+            GetMenu(xs:string key, xs:int storeId, )
+            GetMenuWithTimeRestrictions(xs:string key, xs:int storeId, )
+            GetMerchantReference(xs:string key, )
+            GetMerchantReferenceAndSaveOrder(xs:string key, xs:string orderXml, )
+            GetNewVoucher(xs:string key, xs:int storeId, xs:decimal basketValue, )
+            GetNewVoucherWithOrderId(xs:string key, xs:int storeId, xs:decimal basketValue, xs:int orderId, )
+            GetOrderStatus(xs:string key, xs:int orderId, )
+            GetPreviousOrder(xs:string key, xs:string sessionId, )
+            GetPrice(xs:string key, xs:int storeId, xs:string basketItem, )
+            GetRegions(xs:string key, )
+            GetStoreByAddress(xs:string key, xs:int addressId, )
+            GetStoreByGermanStreetId(xs:string key, xs:int id, )
+            GetStoreById(xs:string key, xs:int storeId, )
+            GetStoreByPostcode(xs:string key, xs:string postcode, xs:int origin, xs:int platform, )
+            GetStoreDeliveryTimes(xs:string key, xs:int storeId, xs:string postcode, xs:string country, xs:int addressLookupId, xs:string basketXml, )
+            GetStoresByGPS(xs:string key, xs:double latitude, xs:double longitude, )
+            GetStoresByRegion(xs:string key, xs:int regionId, )
+            InsertOrderPushToken(xs:string key, xs:string orderId, xs:string pushToken, )
+            Login(xs:string key, xs:string email, xs:string password, )
+            Online()
+            OptOut(xs:string mobileNumber, xs:string emailAddress, )
+            PayOrder(xs:string key, xs:int orderId, xs:string paymentDetailsXml, )
+            PlaceCustomersSavedOrder(xs:string key, xs:string userName, xs:string password, )
+            PlaceOrder(xs:string key, xs:string orderXml, )
+            PlaceSavedOrder(xs:string key, xs:int orderId, xs:string paymentGatewayReference, xs:string bankAuthCode, xs:string merchantReference, xs:string locale, xs:decimal amount, xs:int origin, xs:int platform, xs:string panMasked, )
+            PriceBasket(xs:string key, xs:int storeId, xs:string basket, )
+            PriceBasketWeb(xs:string key, xs:int storeId, xs:string basket, )
+            PriceBasketWithAddressDE(xs:string key, xs:int storeId, xs:string country, xs:string address, xs:string basket, )
+            PriceBasketWithAddressDEWeb(xs:string key, xs:int storeId, xs:string address, xs:string basket, )
+            PriceBasketWithAddressRoI(xs:string key, xs:int storeId, xs:int addressId, xs:string basket, )
+            PriceBasketWithAddressRoIWeb(xs:string key, xs:int storeId, xs:int addressId, xs:string basket, )
+            PriceBasketWithAddressUK(xs:string key, xs:int storeId, xs:string ukAddress, xs:string basket, )
+            PriceBasketWithAddressUKWeb(xs:string key, xs:int storeId, xs:string ukAddress, xs:string basket, )
+            PriceBasketWithVoucherRequestWeb(xs:string key, xs:int storeId, xs:string basket, xs:string referrer, )
+            PrivacyPolicy()
+            Register(xs:string key, xs:string userXml, )
+            SendPassword(xs:string email, xs:string securityAnswer, )
+            SetCustomerPushServiceToken(xs:string key, xs:int customerId, xs:string pushToken, xs:int platformId, )
+            TermsAndConditions()
+            ValidVersion(xs:int platform, xs:string version, )
+         Types (153):
+            AdditionalProduct
+            AddressDE
+            AddressROI
+            AddressUK
+            ApiIdAddressUK
+            ArrayOfAdditionalProduct
+            ArrayOfAddressROI
+            ArrayOfAddressUK
+            ArrayOfApiIdAddressUK
+            ArrayOfBase
+            ArrayOfBasePrice
+            ArrayOfBasketItem
+            ArrayOfBasketItemResult
+            ArrayOfDeliveryTime
+            ArrayOfFreebieSku
+            ArrayOfInt
+            ArrayOfInt1
+            ArrayOfInt2
+            ArrayOfInt3
+            ArrayOfInt4
+            ArrayOfMealDeal
+            ArrayOfMealDealItem
+            ArrayOfProduct
+            ArrayOfProductSku
+            ArrayOfProductSkuCustomisation
+            ArrayOfRegion
+            ArrayOfStore
+            ArrayOfStreetIdPair
+            ArrayOfTopping
+            ArrayOfToppingChange
+            ArrayOfTradingDay
+            Base
+            BasePrice
+            Basket
+            BasketItem
+            BasketItemResult
+            BasketResult
+            CustomerPushResult
+            Customisation
+            DeliveryTime
+            xs:ENTITIES
+            xs:ENTITY
+            ForgottenPasswordResult
+            Freebie
+            FreebieSku
+            xs:ID
+            xs:IDREF
+            xs:IDREFS
+            LoginResult
+            MealDeal
+            MealDealItem
+            Menu
+            xs:NCName
+            xs:NMTOKEN
+            xs:NMTOKENS
+            xs:NOTATION
+            xs:Name
+            OrderResult
+            OrderStatus
+            PreviousOrderResult
+            Product
+            ProductSku
+            ProductSkuCustomisation
+            xs:QName
+            Region
+            RegisterResult
+            Store
+            StreetIdPair
+            Topping
+            ToppingChange
+            TradingDay
+            User
+            Voucher
+            VoucherResult
+            xs:all
+            xs:allNNI
+            xs:annotated
+            xs:anyType
+            xs:anyURI
+            xs:attribute
+            xs:attributeGroup
+            xs:attributeGroupRef
+            xs:base64Binary
+            xs:blockSet
+            xs:boolean
+            xs:byte
+            xs:complexRestrictionType
+            xs:complexType
+            xs:date
+            xs:dateTime
+            xs:decimal
+            xs:derivationControl
+            xs:derivationSet
+            xs:double
+            xs:duration
+            xs:element
+            xs:explicitGroup
+            xs:extensionType
+            xs:facet
+            xs:float
+            xs:formChoice
+            xs:fullDerivationSet
+            xs:gDay
+            xs:gMonth
+            xs:gMonthDay
+            xs:gYear
+            xs:gYearMonth
+            xs:group
+            xs:groupRef
+            xs:hexBinary
+            xs:int
+            xs:integer
+            xs:keybase
+            xs:language
+            xs:localComplexType
+            xs:localElement
+            xs:localSimpleType
+            xs:long
+            xs:namedAttributeGroup
+            xs:namedGroup
+            xs:namespaceList
+            xs:narrowMaxMin
+            xs:negativeInteger
+            xs:noFixedFacet
+            xs:nonNegativeInteger
+            xs:nonPositiveInteger
+            xs:normalizedString
+            xs:numFacet
+            xs:openAttrs
+            xs:positiveInteger
+            xs:public
+            xs:realGroup
+            xs:reducedDerivationControl
+            xs:restrictionType
+            xs:short
+            xs:simpleDerivationSet
+            xs:simpleExplicitGroup
+            xs:simpleExtensionType
+            xs:simpleRestrictionType
+            xs:simpleType
+            xs:string
+            xs:time
+            xs:token
+            xs:topLevelAttribute
+            xs:topLevelComplexType
+            xs:topLevelElement
+            xs:topLevelSimpleType
+            xs:typeDerivationControl
+            xs:unsignedByte
+            xs:unsignedInt
+            xs:unsignedLong
+            xs:unsignedShort
+            xs:wildcard
+
+
