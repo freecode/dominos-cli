@@ -58,7 +58,7 @@ class MealDeal:
              self.name = data["name"]
              self.display_order = data["displayOrder"]
              self.max_topping_changes = data["maxToppingChanges"]
-             self.max_toppics_cy0 = data["maxToppingsCY0"]
+             self.max_toppings_cy0 = data["maxToppingsCY0"]
              self.allowed_sizes = [x for x in data["allowedSizes"]]
              self.allowed_products = [x for x in data["allowedProducts"]]
              self.allowed_bases = [x for x in data["allowedBases"]]
