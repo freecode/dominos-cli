@@ -15,7 +15,7 @@ class Menu:
             self.id_number = data['id']
             self.name = data['name']
             self.description = data['description']
-            self.vegetarian = data['vegetarian']  
+            self.vegetarian = data['vegetarian']
             self.hot = data['hot']
             self.featured = data['hot']
             if "createYourOwn" in data:

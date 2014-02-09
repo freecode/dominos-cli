@@ -15,6 +15,9 @@ class DominosClient:
             self.client = Client("http://dominos.co.uk/dominos.services/PizzaService.asmx?WSDL")
         self.service = self.client.service
 
+    def is_service_online(self):
+        return self.service.Online()
+
     def get_nearest_shop(self, postal_code):
         result = self.service.GetStoreByPostcode(api_key, postal_code, 1, 1)
         return Shop(self.client, result)
