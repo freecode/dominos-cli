@@ -1,5 +1,6 @@
 from suds.client import Client
 from dominoscli.shop import Shop
+from dominoscli.menu import Menu
 
 __author__ = 'rvbiljouw'
 api_key = "5zf0438m77mh1j1p"
@@ -21,3 +22,7 @@ class DominosClient:
     def get_nearest_shop(self, postal_code):
         result = self.service.GetStoreByPostcode(api_key, postal_code, 1, 1)
         return Shop(self.client, result)
+
+    def get_menu(self, shop_id):
+        result = self.service.GetMenu(api_key, shop_id)
+        return Menu(self.client, result)

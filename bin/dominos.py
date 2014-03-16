@@ -1,4 +1,5 @@
 from dominoscli.client import DominosClient
+from dominoscli.ui import UI
 
 __author__ = 'rvbiljouw'
 
@@ -16,3 +17,7 @@ if __name__ == '__main__':
         print 'Sorry, Dominos is closed. (%s)' % shop_name
         exit(255)
     print 'Hooked you up with your nearest shop! (%s)' % shop_name
+    menu = client.get_menu(nearest_shop.id)
+    ui = UI()
+    ui.display_menu(menu)
+    ui.close()
